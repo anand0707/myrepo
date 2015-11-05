@@ -1,0 +1,17 @@
+Django
+celery
+django-celery
+dj-static
+python-debian
+djangorestframework
+git+https://github.com/alanjds/drf-nested-routers
+chardet
+pytz
+mysqlclient
+django-cors-headers
+django-rest-auth
+django-allauth
+redis
+django-bootstrap3
+mock
+selenium
