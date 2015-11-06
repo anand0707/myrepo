@@ -55,8 +55,8 @@ class RepositoryFunctionalTests(StaticLiveServerTestCase):
         
     def click_on_sources_button(self):
         try :
-            if self.sources_button.is_displayed():
-                self.sources_button.click()
+       #     if self.sources_button.is_displayed():
+            self.sources_button.click()
                 #print "source button found"
         except NoSuchElementException:
             print "source button not found" 
