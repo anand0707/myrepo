@@ -49,8 +49,18 @@ class RepositoryFunctionalTests(StaticLiveServerTestCase):
 
     def test_source_botton (self):
         self.test_user_signs_up_for_signup()
-        #self.click_on_sources_button()
+        self.click_on_sources_button()
         #self.create_new_package_source()
         #self.delete_package_source()
         
-        
+    def click_on_sources_button(self):
+        try :
+            if self.sources_button.is_displayed():
+                self.sources_button.click()
+                #print "source button found"
+        except NoSuchElementException:
+            print "source button not found" 
+
+    @property
+    def sources_button(self):
+        return self.selenium.find_element(by.By.LINK_TEXT, 'Sources')
