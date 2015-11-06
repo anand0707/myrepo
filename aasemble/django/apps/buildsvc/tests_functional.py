@@ -47,3 +47,10 @@ class RepositoryFunctionalTests(StaticLiveServerTestCase):
         text_found = re.search(r'Sources', page_header.text)
         self.assertNotEqual(text_found, None)
 
+    def test_source_botton (self):
+        self.test_user_signs_up_for_signup()
+        #self.click_on_sources_button()
+        #self.create_new_package_source()
+        #self.delete_package_source()
+        
+        
